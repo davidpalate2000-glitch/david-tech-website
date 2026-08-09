@@ -1,165 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Seki Tech Ltd</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-        }
-
-        header {
-            background: #111827;
-            color: white;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h2 {
-            margin: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: white;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #555;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .services {
-            padding: 70px 8%;
-            text-align: center;
-        }
-
-        .cards {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #111827;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Security IT — IT support, networking and security technology solutions in New Zealand.">
+  <meta name="theme-color" content="#07111f">
+  <title>Data Security IT | Technology You Can Trust</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-    <h2>Seki Tech Ltd</h2>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <h1>Technology You Can Trust</h1>
-
-    <p>
-        IT Support • Networking • Security Technology
-    </p>
-
-    <a class="button" href="#contact">
-        Contact Us
-    </a>
-
-</section>
-
-<section class="services" id="services">
-
-    <h2>Our Services</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>IT Support</h3>
-            <p>
-                Reliable computer, network and technical support.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Networking</h3>
-            <p>
-                Network installation, configuration and troubleshooting.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Security Technology</h3>
-            <p>
-                CCTV, access control and security technology solutions.
-            </p>
-        </div>
-
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>New Zealand IT & Security Technology</span>
+      <a href="mailto:info@datasecurityit.kiwi">info@datasecurityit.kiwi</a>
     </div>
+  </div>
 
-</section>
+  <header class="nav-wrap" id="top">
+    <nav class="container nav">
+      <a class="brand" href="#top" aria-label="Data Security IT home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>DATA <b>SECURITY</b> IT</span>
+      </a>
 
-<section class="services" id="contact">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <h2>Contact Us</h2>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
 
-    <p>
-        Email: davidpalate2000@gmail.com
-    </p>
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Technology. Security. Reliability.</div>
+          <h1>Smarter technology.<br><em>Stronger security.</em></h1>
+          <p class="hero-text">
+            Practical IT and security technology solutions designed to keep your people,
+            systems and sites connected, protected and ready.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Talk to us <span>→</span></a>
+            <a class="btn btn-ghost" href="#services">Explore services</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>IT</strong><span>Support</span></div>
+            <div><strong>NET</strong><span>Networking</span></div>
+            <div><strong>SEC</strong><span>Security Tech</span></div>
+          </div>
+        </div>
 
-</section>
+        <div class="hero-visual reveal">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="dashboard-card">
+            <div class="dash-head">
+              <div>
+                <span class="status-dot"></span>
+                <span>SECURITY OPERATIONS</span>
+              </div>
+              <span class="live">LIVE</span>
+            </div>
+            <div class="network-map">
+              <div class="node main-node"><span>DS</span></div>
+              <div class="node n1"><span>01</span></div>
+              <div class="node n2"><span>02</span></div>
+              <div class="node n3"><span>03</span></div>
+              <div class="node n4"><span>04</span></div>
+              <i class="line l1"></i><i class="line l2"></i><i class="line l3"></i><i class="line l4"></i>
+            </div>
+            <div class="dash-metrics">
+              <div><span>NETWORK</span><strong>ONLINE</strong></div>
+              <div><span>SYSTEMS</span><strong>SECURE</strong></div>
+              <div><span>ALERTS</span><strong>0</strong></div>
+            </div>
+          </div>
+          <div class="floating-card card-one">
+            <span class="mini-icon">✓</span>
+            <div><strong>Protected</strong><small>Infrastructure</small></div>
+          </div>
+          <div class="floating-card card-two">
+            <span class="mini-icon">⌁</span>
+            <div><strong>Connected</strong><small>24/7 visibility</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
 
-<footer>
+    <section class="strip">
+      <div class="container strip-inner">
+        <span>BUILT FOR</span>
+        <div>BUSINESS</div><div>PROPERTY</div><div>COMMUNITIES</div><div>FIELD OPERATIONS</div>
+      </div>
+    </section>
 
-    © 2026 Seki Tech Ltd. All Rights Reserved.
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">WHAT WE DO</span>
+            <h2>Technology that works<br><em>when it matters.</em></h2>
+          </div>
+          <p>From everyday IT support to physical security technology, we focus on solutions that are practical, dependable and built around your operation.</p>
+        </div>
 
-</footer>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">01</div>
+            <h3>IT Support</h3>
+            <p>Keep users productive with responsive troubleshooting, device support, software assistance and technical guidance.</p>
+            <ul><li>Desktop & laptop support</li><li>System troubleshooting</li><li>Technical documentation</li></ul>
+          </article>
 
+          <article class="service-card featured reveal">
+            <div class="service-icon">02</div>
+            <h3>Networks & Infrastructure</h3>
+            <p>Design, deploy and maintain reliable network infrastructure for offices, sites and distributed operations.</p>
+            <ul><li>LAN / WAN networking</li><li>Structured cabling</li><li>Network monitoring</li></ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">03</div>
+            <h3>Security Technology</h3>
+            <p>Connect your physical security systems with dependable technology and thoughtful installation practices.</p>
+            <ul><li>CCTV systems</li><li>Access control</li><li>Alarm & sensor systems</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="solutions">
+      <div class="container solution-grid">
+        <div class="solution-copy reveal">
+          <span class="section-kicker">OUR APPROACH</span>
+          <h2>One partner.<br><em>Clear solutions.</em></h2>
+          <p>Good technology should reduce complexity, not add to it. We assess what you have, identify what needs attention, then build a solution that makes sense for your environment and budget.</p>
+
+          <div class="check-list">
+            <div><span>✓</span><p><strong>Assess</strong> — understand your people, sites and technology.</p></div>
+            <div><span>✓</span><p><strong>Plan</strong> — recommend practical, scalable improvements.</p></div>
+            <div><span>✓</span><p><strong>Deploy</strong> — implement with minimal disruption.</p></div>
+            <div><span>✓</span><p><strong>Support</strong> — keep systems reliable after deployment.</p></div>
+          </div>
+        </div>
+
+        <div class="terminal reveal">
+          <div class="terminal-bar"><span></span><span></span><span></span><b>system_status</b></div>
+          <div class="terminal-body">
+            <p><span class="green">●</span> infrastructure.check()</p>
+            <p class="muted">Scanning network environment...</p>
+            <p><span class="green">✓</span> Connectivity <b>STABLE</b></p>
+            <p><span class="green">✓</span> Access control <b>READY</b></p>
+            <p><span class="green">✓</span> CCTV health <b>MONITORED</b></p>
+            <p><span class="green">✓</span> Backup status <b>PROTECTED</b></p>
+            <p class="cursor">_</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-number reveal">DS<span>/</span>IT</div>
+        <div class="about-copy reveal">
+          <span class="section-kicker">ABOUT DATA SECURITY IT</span>
+          <h2>Technology with a <em>practical mindset.</em></h2>
+          <p>Data Security IT is focused on helping organisations get more from their technology while keeping systems and physical environments secure.</p>
+          <p>Whether you need help with a workstation, a network, CCTV, access control or a larger technology project, our goal is simple: deliver a solution you can understand, rely on and grow with.</p>
+          <a class="text-link" href="#contact">Start a conversation <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong>IT</strong><span>Support & troubleshooting</span></div>
+        <div class="stat reveal"><strong>24/7</strong><span>Visibility-ready solutions</span></div>
+        <div class="stat reveal"><strong>NZ</strong><span>Local technology focus</span></div>
+        <div class="stat reveal"><strong>1</strong><span>Technology partner</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="section-kicker">LET'S TALK</span>
+          <h2>Have a technology<br><em>challenge?</em></h2>
+          <p>Tell us what you're working on. We'll help you work out the next step.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:info@datasecurityit.kiwi">Email us <span>→</span></a>
+          <span>info@datasecurityit.kiwi</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>DATA <b>SECURITY</b> IT</span></div>
+      <p>IT • Networking • Security Technology</p>
+      <p>© <span id="year"></span> Data Security IT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
