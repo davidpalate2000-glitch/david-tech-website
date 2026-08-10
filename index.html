@@ -1,217 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Data Security IT — IT support, networking and security technology solutions in New Zealand.">
-  <meta name="theme-color" content="#07111f">
-  <title>Data Security IT | Technology You Can Trust</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data Security IT — IT support, networking, CCTV, access control and security technology solutions in New Zealand.">
+<meta name="theme-color" content="#07111f">
+<title>Data Security IT | IT • Networks • Security</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--navy:#06111f;--navy2:#0b2035;--cyan:#4ddcff;--cyan2:#9af0ff;--ink:#081523;--muted:#68788d;--line:#dce6ef;--bg:#f4f8fb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}img{display:block;width:100%;height:100%;object-fit:cover}a{text-decoration:none;color:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.topline{background:#020810;color:#8395a9;font-size:11px;letter-spacing:.12em}.topline .container{height:34px;display:flex;align-items:center;justify-content:space-between}.topline a{color:#d1deea;letter-spacing:0}
+.nav{position:sticky;top:0;z-index:20;background:rgba(6,17,31,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;font:600 15px "Space Grotesk";letter-spacing:.07em}.brand b{color:var(--cyan)}.logo{height:34px;width:34px;border:1px solid rgba(77,220,255,.5);border-radius:9px;display:flex;align-items:flex-end;justify-content:center;gap:3px;padding:7px}.logo i{display:block;width:4px;background:var(--cyan);border-radius:3px}.logo i:nth-child(1){height:10px}.logo i:nth-child(2){height:18px}.logo i:nth-child(3){height:13px}nav{display:flex;align-items:center;gap:31px;color:#b7c6d5;font-size:13px;font-weight:700}nav a:hover{color:#fff}.nav-button{background:#fff!important;color:#06111f!important;padding:11px 17px;border-radius:8px}.hamburger{display:none;background:none;border:0}.hamburger span{display:block;width:24px;height:2px;background:#fff;margin:5px}
+.hero{background:linear-gradient(120deg,#06111f,#0a2034);color:#fff;overflow:hidden}.hero-inner{min-height:650px;display:grid;grid-template-columns:1.03fr .97fr;gap:65px;align-items:center}.hero-copy{padding:75px 0}.eyebrow,label{font:700 10px "DM Sans";letter-spacing:.18em;color:#4bdcff}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:22px}.eyebrow span{width:27px;height:1px;background:var(--cyan)}h1,h2,h3{font-family:"Space Grotesk";line-height:1.05;margin:0}h1{font-size:clamp(46px,5.4vw,72px);letter-spacing:-.055em;max-width:700px}h1 em,h2 em{font-style:normal;color:var(--cyan)}.hero-copy>p{max-width:610px;color:#a8b9cb;font-size:17px;margin:26px 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:13px 18px;border-radius:8px;font-weight:700;font-size:13px;transition:.25s}.button.primary{background:var(--cyan);color:#03101c;box-shadow:0 12px 35px rgba(77,220,255,.16)}.button.primary:hover{transform:translateY(-2px)}.button.outline{border:1px solid rgba(255,255,255,.2);color:#dce6ef}.mini-stats{display:flex;gap:36px;margin-top:50px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px}.mini-stats div{display:flex;gap:7px;align-items:baseline}.mini-stats b{font:700 14px "Space Grotesk"}.mini-stats span{color:#7f92a8;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.hero-photo{height:500px;position:relative;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 35px 90px rgba(0,0,0,.3)}.hero-photo img{filter:saturate(.8) contrast(1.05)}.photo-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(2,14,26,.05),rgba(3,16,28,.75))}.hero-badge{position:absolute;left:22px;bottom:22px;background:rgba(4,17,30,.88);border:1px solid rgba(101,224,255,.25);padding:13px 16px;border-radius:10px;display:flex;align-items:center;gap:10px}.hero-badge b{display:block;font-size:11px}.hero-badge small{display:block;color:#91a6ba;font-size:9px}.pulse{width:8px;height:8px;border-radius:50%;background:#5ee7a4;box-shadow:0 0 14px #5ee7a4}
+.intro-strip{background:#fff;border-bottom:1px solid var(--line)}.intro-strip .container{height:68px;display:flex;justify-content:center;gap:27px;align-items:center;color:#7b899a;font:600 11px "Space Grotesk";letter-spacing:.14em}.intro-strip b{color:#20bde9}
+.section{padding:110px 0}.heading-row{display:grid;grid-template-columns:1fr 430px;gap:70px;align-items:end;margin-bottom:50px}.heading-row.compact{margin-bottom:35px}.heading-row h2,.about h2,.feature h2,.reviews h2,.contact h2{font-size:clamp(37px,4vw,54px);letter-spacing:-.045em;margin-top:13px}.heading-row>p,.feature-copy>p,.about p{color:var(--muted);font-size:15px;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;padding-bottom:25px;position:relative;transition:.3s}.service:hover{transform:translateY(-5px);box-shadow:0 22px 60px rgba(7,24,43,.1)}.num{position:absolute;top:17px;left:18px;z-index:2;background:#071522;color:var(--cyan);font:700 11px "Space Grotesk";padding:7px 9px;border-radius:6px}.service-image{height:215px}.service h3{font-size:23px;margin:22px 24px 9px}.service p{font-size:13px;color:#728096;margin:0 24px 16px}.service a{font-size:12px;font-weight:700;color:#15a9d7;margin:0 24px}
+.feature{background:#07111f;color:#fff;padding:110px 0}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.feature-image{height:500px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}.feature-copy>p{color:#9eafc2;max-width:560px}.benefits{margin-top:34px;display:grid;gap:14px}.benefits div{display:flex;gap:12px;align-items:flex-start}.benefits b{width:24px;height:24px;border:1px solid rgba(77,220,255,.3);border-radius:50%;display:grid;place-items:center;color:var(--cyan);font-size:11px;flex:none}.benefits span{font-size:13px;color:#aab9c8}.benefits strong{color:#fff}
+.gallery{background:#fff}.gallery-grid{display:grid;grid-template-columns:1.45fr .8fr .8fr;gap:14px;height:440px}.gallery-grid figure{margin:0;position:relative;border-radius:13px;overflow:hidden;background:#0b1d30}.gallery-grid figure:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.75))}.gallery-grid img{transition:.5s}.gallery-grid figure:hover img{transform:scale(1.04)}figcaption{position:absolute;z-index:2;left:18px;bottom:15px;color:#fff;font:600 13px "Space Grotesk"}.photo-note{color:#8a98a9;font-size:11px;margin:15px 0 0}
+.reviews{background:#edf4f8;padding:105px 0}.review-head{max-width:700px;margin-bottom:45px}.review-head p{color:var(--muted);max-width:620px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.review-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:27px;min-height:245px}.stars{color:#13acd8;letter-spacing:.14em;font-size:13px}.review-card p{color:#65758a;font-size:14px;min-height:85px}.review-card strong{display:block;font-size:12px}.review-card small{display:block;color:#95a2b2;font-size:10px;margin-top:2px}.review-card.placeholder{border-style:dashed}.review-cta{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#758499;font-size:12px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;align-items:center}.about-mark{font:700 clamp(80px,14vw,165px)/.8 "Space Grotesk";letter-spacing:-.1em;color:#e0e9f1}.about-mark span{color:#48d9ff}.about-copy p{max-width:650px}.contact{padding:90px 0}.contact-box{background:linear-gradient(135deg,#0a1b2d,#0b2b43);color:#fff;border-radius:19px;padding:62px 68px;display:flex;justify-content:space-between;align-items:center;gap:35px;box-shadow:0 25px 75px rgba(5,22,39,.15)}.contact-box p{color:#a4b5c7}.contact-actions{display:flex;flex-direction:column;gap:10px;align-items:flex-start}.contact-actions>span{font-size:11px;color:#8195a9}
+footer{background:#020810;color:#718398;padding:30px 0 18px}.footer{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:10px}.credits{font-size:9px;color:#4f6175;margin-top:20px;line-height:1.6}.footer .brand{font-size:12px}
+@media(max-width:900px){.hero-inner,.feature-grid,.about-grid{grid-template-columns:1fr}.hero-inner{padding-top:20px}.hero-photo{height:430px}.heading-row{grid-template-columns:1fr;gap:15px}.services{grid-template-columns:1fr 1fr}.feature-grid{gap:50px}.review-grid{grid-template-columns:1fr 1fr}.contact-box{padding:50px 40px}.gallery-grid{height:380px}}
+@media(max-width:650px){.container{width:calc(100% - 28px)}.topline{display:none}.nav-inner{height:67px}.hamburger{display:block}.nav nav{display:none;position:absolute;left:0;right:0;top:67px;background:#06111f;padding:15px;flex-direction:column;align-items:stretch;gap:3px;border-bottom:1px solid rgba(255,255,255,.08)}.nav nav.open{display:flex}.nav nav a{padding:12px}.nav-button{text-align:center}.hero-inner{min-height:auto}.hero-copy{padding:70px 0 30px}.hero-photo{height:360px}.mini-stats{justify-content:space-between;gap:10px}.section,.feature,.reviews{padding:78px 0}.services,.review-grid{grid-template-columns:1fr}.service-image{height:220px}.gallery-grid{grid-template-columns:1fr;height:auto}.gallery-grid figure{height:280px}.gallery-grid .large{height:340px}.about-grid{gap:45px}.about-mark{text-align:center}.contact-box{padding:38px 25px;display:block}.contact-actions{margin-top:25px}.footer{flex-direction:column;align-items:flex-start}.intro-strip .container{gap:10px;font-size:8px;justify-content:space-between}.review-cta{display:block}.review-cta .button{margin-top:15px}}
+
+</style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span>New Zealand IT & Security Technology</span>
-      <a href="mailto:info@datasecurityit.kiwi">info@datasecurityit.kiwi</a>
+<div class="topline"><div class="container"><span>NEW ZEALAND TECHNOLOGY & SECURITY</span><a href="mailto:info@datasecurityit.kiwi">info@datasecurityit.kiwi</a></div></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">
+      <span class="logo"><i></i><i></i><i></i></span>
+      <span>DATA <b>SECURITY</b> IT</span>
+    </a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a class="nav-button" href="#contact">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> SMARTER SYSTEMS. STRONGER PROTECTION.</div>
+      <h1>Technology that keeps your business <em>connected & secure.</em></h1>
+      <p>IT support, network infrastructure and security technology solutions for businesses, properties and field operations.</p>
+      <div class="actions">
+        <a class="button primary" href="#contact">Request a quote <b>→</b></a>
+        <a class="button outline" href="#work">View our work</a>
+      </div>
+      <div class="mini-stats">
+        <div><b>IT</b><span>Support</span></div>
+        <div><b>NET</b><span>Networks</span></div>
+        <div><b>SEC</b><span>Security Tech</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/CCTV%20Security%20cameras.jpg" alt="CCTV security cameras">
+      <div class="photo-overlay"></div>
+      <div class="hero-badge"><span class="pulse"></span><div><b>SECURITY READY</b><small>Designed for visibility & control</small></div></div>
     </div>
   </div>
+</section>
 
-  <header class="nav-wrap" id="top">
-    <nav class="container nav">
-      <a class="brand" href="#top" aria-label="Data Security IT home">
-        <span class="brand-mark"><span></span><span></span><span></span></span>
-        <span>DATA <b>SECURITY</b> IT</span>
-      </a>
+<section class="intro-strip"><div class="container"><span>DESIGN</span><b>→</b><span>INSTALL</span><b>→</b><span>CONNECT</span><b>→</b><span>SUPPORT</span></div></section>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Get a Quote</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> Technology. Security. Reliability.</div>
-          <h1>Smarter technology.<br><em>Stronger security.</em></h1>
-          <p class="hero-text">
-            Practical IT and security technology solutions designed to keep your people,
-            systems and sites connected, protected and ready.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Talk to us <span>→</span></a>
-            <a class="btn btn-ghost" href="#services">Explore services</a>
-          </div>
-          <div class="trust-row">
-            <div><strong>IT</strong><span>Support</span></div>
-            <div><strong>NET</strong><span>Networking</span></div>
-            <div><strong>SEC</strong><span>Security Tech</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="orb orb-a"></div>
-          <div class="orb orb-b"></div>
-          <div class="dashboard-card">
-            <div class="dash-head">
-              <div>
-                <span class="status-dot"></span>
-                <span>SECURITY OPERATIONS</span>
-              </div>
-              <span class="live">LIVE</span>
-            </div>
-            <div class="network-map">
-              <div class="node main-node"><span>DS</span></div>
-              <div class="node n1"><span>01</span></div>
-              <div class="node n2"><span>02</span></div>
-              <div class="node n3"><span>03</span></div>
-              <div class="node n4"><span>04</span></div>
-              <i class="line l1"></i><i class="line l2"></i><i class="line l3"></i><i class="line l4"></i>
-            </div>
-            <div class="dash-metrics">
-              <div><span>NETWORK</span><strong>ONLINE</strong></div>
-              <div><span>SYSTEMS</span><strong>SECURE</strong></div>
-              <div><span>ALERTS</span><strong>0</strong></div>
-            </div>
-          </div>
-          <div class="floating-card card-one">
-            <span class="mini-icon">✓</span>
-            <div><strong>Protected</strong><small>Infrastructure</small></div>
-          </div>
-          <div class="floating-card card-two">
-            <span class="mini-icon">⌁</span>
-            <div><strong>Connected</strong><small>24/7 visibility</small></div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-glow"></div>
-    </section>
-
-    <section class="strip">
-      <div class="container strip-inner">
-        <span>BUILT FOR</span>
-        <div>BUSINESS</div><div>PROPERTY</div><div>COMMUNITIES</div><div>FIELD OPERATIONS</div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-kicker">WHAT WE DO</span>
-            <h2>Technology that works<br><em>when it matters.</em></h2>
-          </div>
-          <p>From everyday IT support to physical security technology, we focus on solutions that are practical, dependable and built around your operation.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="service-icon">01</div>
-            <h3>IT Support</h3>
-            <p>Keep users productive with responsive troubleshooting, device support, software assistance and technical guidance.</p>
-            <ul><li>Desktop & laptop support</li><li>System troubleshooting</li><li>Technical documentation</li></ul>
-          </article>
-
-          <article class="service-card featured reveal">
-            <div class="service-icon">02</div>
-            <h3>Networks & Infrastructure</h3>
-            <p>Design, deploy and maintain reliable network infrastructure for offices, sites and distributed operations.</p>
-            <ul><li>LAN / WAN networking</li><li>Structured cabling</li><li>Network monitoring</li></ul>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">03</div>
-            <h3>Security Technology</h3>
-            <p>Connect your physical security systems with dependable technology and thoughtful installation practices.</p>
-            <ul><li>CCTV systems</li><li>Access control</li><li>Alarm & sensor systems</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="dark-section" id="solutions">
-      <div class="container solution-grid">
-        <div class="solution-copy reveal">
-          <span class="section-kicker">OUR APPROACH</span>
-          <h2>One partner.<br><em>Clear solutions.</em></h2>
-          <p>Good technology should reduce complexity, not add to it. We assess what you have, identify what needs attention, then build a solution that makes sense for your environment and budget.</p>
-
-          <div class="check-list">
-            <div><span>✓</span><p><strong>Assess</strong> — understand your people, sites and technology.</p></div>
-            <div><span>✓</span><p><strong>Plan</strong> — recommend practical, scalable improvements.</p></div>
-            <div><span>✓</span><p><strong>Deploy</strong> — implement with minimal disruption.</p></div>
-            <div><span>✓</span><p><strong>Support</strong> — keep systems reliable after deployment.</p></div>
-          </div>
-        </div>
-
-        <div class="terminal reveal">
-          <div class="terminal-bar"><span></span><span></span><span></span><b>system_status</b></div>
-          <div class="terminal-body">
-            <p><span class="green">●</span> infrastructure.check()</p>
-            <p class="muted">Scanning network environment...</p>
-            <p><span class="green">✓</span> Connectivity <b>STABLE</b></p>
-            <p><span class="green">✓</span> Access control <b>READY</b></p>
-            <p><span class="green">✓</span> CCTV health <b>MONITORED</b></p>
-            <p><span class="green">✓</span> Backup status <b>PROTECTED</b></p>
-            <p class="cursor">_</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container about-grid">
-        <div class="about-number reveal">DS<span>/</span>IT</div>
-        <div class="about-copy reveal">
-          <span class="section-kicker">ABOUT DATA SECURITY IT</span>
-          <h2>Technology with a <em>practical mindset.</em></h2>
-          <p>Data Security IT is focused on helping organisations get more from their technology while keeping systems and physical environments secure.</p>
-          <p>Whether you need help with a workstation, a network, CCTV, access control or a larger technology project, our goal is simple: deliver a solution you can understand, rely on and grow with.</p>
-          <a class="text-link" href="#contact">Start a conversation <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats-section">
-      <div class="container stats-grid">
-        <div class="stat reveal"><strong>IT</strong><span>Support & troubleshooting</span></div>
-        <div class="stat reveal"><strong>24/7</strong><span>Visibility-ready solutions</span></div>
-        <div class="stat reveal"><strong>NZ</strong><span>Local technology focus</span></div>
-        <div class="stat reveal"><strong>1</strong><span>Technology partner</span></div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-card reveal">
-        <div>
-          <span class="section-kicker">LET'S TALK</span>
-          <h2>Have a technology<br><em>challenge?</em></h2>
-          <p>Tell us what you're working on. We'll help you work out the next step.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:info@datasecurityit.kiwi">Email us <span>→</span></a>
-          <span>info@datasecurityit.kiwi</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div class="brand footer-brand"><span class="brand-mark"><span></span><span></span><span></span></span><span>DATA <b>SECURITY</b> IT</span></div>
-      <p>IT • Networking • Security Technology</p>
-      <p>© <span id="year"></span> Data Security IT. All rights reserved.</p>
+<section class="section" id="services">
+  <div class="container">
+    <div class="heading-row">
+      <div><label>OUR SERVICES</label><h2>Practical technology.<br><em>Professional results.</em></h2></div>
+      <p>From everyday IT support to physical security systems, we help you build technology that is reliable, understandable and ready for growth.</p>
     </div>
-  </footer>
+    <div class="services">
+      <article class="service"><div class="num">01</div><div class="service-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Server_Room_%2822397102849%29.jpg" alt="Server room infrastructure"></div><h3>IT & Network Support</h3><p>Keep users, devices and infrastructure running with responsive support and practical troubleshooting.</p><a href="#contact">Learn more →</a></article>
+      <article class="service"><div class="num">02</div><div class="service-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/CCTV%20Security%20cameras.jpg" alt="CCTV security cameras"></div><h3>CCTV & Video Security</h3><p>Plan and deploy camera systems for entrances, buildings, sites and critical areas with clear coverage in mind.</p><a href="#contact">Learn more →</a></article>
+      <article class="service"><div class="num">03</div><div class="service-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Arc_card_reader.jpg" alt="Access card reader"></div><h3>Access Control</h3><p>Control who enters your spaces with card, credential and electronic access solutions.</p><a href="#contact">Learn more →</a></article>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="feature" id="work">
+  <div class="container feature-grid">
+    <div class="feature-image"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Server_Room_%2822397102849%29.jpg" alt="Organised server room"></div>
+    <div class="feature-copy"><label>WHY DATA SECURITY IT</label><h2>One partner for your <em>technology environment.</em></h2><p>We bring IT, networking and security technology together so your systems work as one environment instead of a collection of disconnected parts.</p>
+      <div class="benefits"><div><b>✓</b><span><strong>Assess</strong> — understand your site and requirements.</span></div><div><b>✓</b><span><strong>Design</strong> — create a solution that fits the real world.</span></div><div><b>✓</b><span><strong>Deploy</strong> — install with care and minimal disruption.</span></div><div><b>✓</b><span><strong>Support</strong> — keep your technology dependable.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery section">
+  <div class="container">
+    <div class="heading-row compact"><div><label>SECURITY TECHNOLOGY</label><h2>Built around <em>visibility.</em></h2></div><p>Professional-looking systems start with good planning: the right camera position, the right network and the right access points.</p></div>
+    <div class="gallery-grid">
+      <figure class="large"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/CCTV%20Security%20cameras.jpg" alt="CCTV installation"><figcaption>CCTV & surveillance</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Arc_card_reader.jpg" alt="Electronic access card reader"><figcaption>Access control</figcaption></figure>
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Server_Room_%2822397102849%29.jpg" alt="Network server room"><figcaption>Network infrastructure</figcaption></figure>
+    </div>
+    <p class="photo-note">Stock/reference photography is used here while the site is being built. Replace these images with your own installation and project photos for a stronger portfolio.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="review-head"><label>CLIENT REVIEWS</label><h2>Let your customers<br><em>tell the story.</em></h2><p>We have left these as honest placeholders rather than inventing testimonials. Add your real Google or customer reviews here as you receive them.</p></div>
+    <div class="review-grid">
+      <article class="review-card placeholder"><div class="stars">★★★★★</div><p>“Add your first genuine customer review here. A short comment about the service, installation or support works best.”</p><strong>— Client Name</strong><small>Business / Location</small></article>
+      <article class="review-card placeholder"><div class="stars">★★★★★</div><p>“Add a second genuine customer review here. Keep it specific: what problem did Data Security IT solve?”</p><strong>— Client Name</strong><small>Business / Location</small></article>
+      <article class="review-card placeholder"><div class="stars">★★★★★</div><p>“Add a third genuine customer review here once you have permission to publish it.”</p><strong>— Client Name</strong><small>Business / Location</small></article>
+    </div>
+    <div class="review-cta"><span>Already worked with us?</span><a class="button primary" href="mailto:info@datasecurityit.kiwi?subject=Data%20Security%20IT%20Review">Send us your review <b>→</b></a></div>
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <div class="container about-grid"><div class="about-mark">DS<span>/</span>IT</div><div><label>ABOUT US</label><h2>Technology with a <em>practical mindset.</em></h2><p>Data Security IT is focused on helping organisations get more from their technology while improving reliability, visibility and security.</p><p>Whether you need support for a workstation, a network, CCTV, access control or a larger technology project, we focus on solutions that make sense for your environment and budget.</p></div></div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-box"><div><label>START A CONVERSATION</label><h2>Have a technology<br><em>challenge?</em></h2><p>Tell us what you need. We'll help you work out the next step.</p></div><div class="contact-actions"><a class="button primary" href="mailto:info@datasecurityit.kiwi">Email Data Security IT <b>→</b></a><span>info@datasecurityit.kiwi</span></div></div>
+</section>
+</main>
+
+<footer><div class="container footer"><div class="brand"><span class="logo"><i></i><i></i><i></i></span><span>DATA <b>SECURITY</b> IT</span></div><span>IT • NETWORKING • SECURITY TECHNOLOGY</span><span>© <span id="year"></span> Data Security IT</span></div><div class="container credits">Photography: Santeri Viinamäki (CC BY 4.0), Matthew Boonstra (CC BY-SA 4.0), Carl Lender (CC BY 2.0) via Wikimedia Commons. Replace with your own project photos when available.</div></footer>
+<script>
+const burger=document.querySelector('.hamburger');const nav=document.querySelector('.nav nav');if(burger){burger.addEventListener('click',()=>nav.classList.toggle('open'))}
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+</script>
 </body>
 </html>
